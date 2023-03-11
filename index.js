@@ -24,7 +24,7 @@ const createTimerAnimator = () => {
         inputEl.value = ''
       }
       --seconds
-    }, 1)
+    }, 1000)
   }
 }
 
