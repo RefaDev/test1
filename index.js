@@ -2,7 +2,7 @@ const inputEl = document.querySelector('input')
 const buttonEl = document.querySelector('button')
 const timerEl = document.querySelector('span')
 
-const addZero = (timeEl) => (timeEl <= 10 ? '0' + timeEl : timeEl)
+const addZero = (timeEl) => (timeEl < 10 ? '0' + timeEl : timeEl)
 // Напишите реализацию createTimerAnimator
 // который будет анимировать timerEl
 const createTimerAnimator = () => {
@@ -24,7 +24,7 @@ const createTimerAnimator = () => {
         inputEl.value = ''
       }
       --seconds
-    }, 1000)
+    }, 1)
   }
 }
 
